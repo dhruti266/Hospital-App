@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Dhruti Parekh - 101039706
+     COMP3074 -  Assignment 2
+ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dhruti.a2101039706.DashboardActivity">
+
+    <TextView
+        android:id="@+id/dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textColor="#198ba3"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/btnEnterTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Enter Test Information"
+        android:background="#198ba3"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:onClick="goToTestInfoScreen"/>
+
+    <Button
+        android:id="@+id/btnDisplayTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Display Test Information"
+        android:background="#198ba3"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:onClick="goToDisplayTestInfoScreen"/>
+
+    <Button
+        android:id="@+id/btnEnterPatient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Enter Patient Information"
+        android:background="#198ba3"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:onClick="goToPatientInfoScreen"/>
+
+    <Button
+        android:id="@+id/btnDisplayPatient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Display Patient Information"
+        android:background="#198ba3"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:onClick="goToDisplayPatientInfoScreen"/>
+
+</LinearLayout>

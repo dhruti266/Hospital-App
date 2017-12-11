@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Dhruti Parekh - 101039706
+     COMP3074 -  Assignment 2
+ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dhruti.a2101039706.RegistrationActivity">
+
+    <TextView
+        android:id="@+id/createAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Create an Account"
+        android:textAlignment="center"
+        android:textColor="#198ba3"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/editFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:hint="Last Name" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:hint="Password" />
+
+    <TextView
+        android:id="@+id/txtAreYou"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Are you ?"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp" />
+
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/radioGroupUserType"
+            android:layout_marginTop="10dp"
+            android:gravity="left">
+
+            <RadioButton
+                android:id="@+id/radioBtnDoctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Doctor"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radioBtnNurse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nurse"
+                android:textSize="20dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Department"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinnerDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_marginTop="10dp"
+        android:background="#198ba3"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:onClick="goToMainScreen"/>
+</LinearLayout>

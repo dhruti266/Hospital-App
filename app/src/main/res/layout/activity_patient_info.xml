@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Dhruti Parekh - 101039706
+     COMP3074 -  Assignment 2
+ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dhruti.a2101039706.PatientInfoActivity">
+
+    <TextView
+        android:id="@+id/patientInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patient Information"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textColor="#198ba3"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/editFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="20dp"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:hint="First Name"/>
+
+    <EditText
+        android:id="@+id/editLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:hint="Last Name" />
+
+    <TextView
+        android:id="@+id/txtDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select Department"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinnerDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/txtDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Doctor"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinnerDoctorNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/editRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:hint="Room" />
+
+    <Button
+        android:id="@+id/btnAddPatient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Patient"
+        android:layout_marginTop="10dp"
+        android:background="#198ba3"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:onClick="addNewPatient"/>
+
+</LinearLayout>

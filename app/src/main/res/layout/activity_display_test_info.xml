@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Dhruti Parekh - 101039706
+     COMP3074 -  Assignment 2
+ -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dhruti.a2101039706.DisplayTestInfoActivity">
+
+    <TextView
+        android:id="@+id/testInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test Information"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textColor="#198ba3"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/txtTestNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Test"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerTestNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/txtPatientNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Patient"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerPatientNames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/txtTestInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"/>
+
+</LinearLayout>
